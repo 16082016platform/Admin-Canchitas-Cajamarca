@@ -1,0 +1,82 @@
+<div data-role="view" data-title="Details" data-model="app.canchas.canchasModel" data-bind="events: { show: detailsShow }" id="canchasModelScreen" class="screen screen--detail">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left">Back</a>
+            <span data-bind="text: strings.canchas.canchasModel.detailHeaderFieldValue"></span>
+            <a data-role="button" data-align="right" data-bind="events: { click: editClick }">Edit</a>
+        </div>
+    </header>
+
+    <div class="details-content screen__content screen__content--details">
+        <div class="km-listview-wrapper">
+            <ul class="km-listview km-list km-listinset details-fields">
+                <li>
+                    <h3 data-bind="text: currentItem.nombre"></h3></li>
+                <li>
+                    <div data-bind="html: currentItem.direccion"></div>
+                </li>
+
+                <li class="detail-content-item">
+
+                    <div id="fotoField" class="km-label-above imageListItem field field--image">
+
+                        <div class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.foto.title"></div>
+
+                        <div class="align-center field__content">
+
+                            <img data-bind="attr: { src: currentItem.fotoImage }">
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="detail-content-item">
+
+
+                    <label id="contactoField" class="km-label-above field field--text-block">
+
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.contacto.title"></span>
+
+
+                        <div class="textBlock field__content" data-bind="html: currentItem.contacto"></div>
+
+                    </label>
+
+
+                </li>
+                <li class="detail-content-item">
+
+
+                    <label id="telefonoField" class="km-label-above field field--text-block">
+
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.telefono.title"></span>
+
+
+                        <div class="textBlock field__content" data-bind="html: currentItem.telefono"></div>
+
+                    </label>
+
+
+                </li>
+                <li class="detail-content-item">
+
+
+                    <label id="celularField" class="km-label-above field field--text-block">
+
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.celular.title"></span>
+
+
+                        <div class="textBlock field__content" data-bind="html: currentItem.celular"></div>
+
+                    </label>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_canchasModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_canchasModel -->
+</div>

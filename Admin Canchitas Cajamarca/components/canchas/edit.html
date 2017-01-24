@@ -1,0 +1,78 @@
+<div data-role="view" data-title="Edit" data-model="app.canchas.editItemViewModel" data-bind="events: { show: onShow }" id="canchasModelEditScreen" class="screen screen--edit edit-item-view">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-bind="text: strings.canchas.canchasModel.editScreenHeaderValue"></span>
+            <a data-role="backbutton" data-align="left" data-bind="events: { click: onCancel }">Cancel</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: onSaveClick }">Save</a>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_canchasModel -->
+    <!-- END_CUSTOM_CODE_canchasModel -->
+    <div id="editableListForm2" class="form-view screen__content screen__content--form">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+
+                    <label id="nombreField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.nombre.title"></span>
+
+
+                        <input id="nombre" data-bind="value: editFormData.nombre" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="contactoField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.contacto.title"></span>
+
+
+                        <input id="contacto" data-bind="value: editFormData.contacto" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="celularField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.celular.title"></span>
+
+
+                        <input id="celular" data-bind="value: editFormData.celular" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="telefonoField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.telefono.title"></span>
+
+
+                        <input id="telefono" data-bind="value: editFormData.telefono" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <div id="fotoField" class="field field--file-upload editableListItem fileUploadListItem km-label-above">
+
+                        <div class="field__label" data-bind="text: strings.canchas.canchasModel.editableListForm2.foto.title"></div>
+
+                        <div class="field__content">
+                            <span id="fotoName" class="file-upload-name field__content-info"></span>
+                            <a href="javascript:void(0)" class="link" data-bind="text: strings.canchas.canchasModel.editableListForm2.foto.fileUploadPlaceholder"></a>
+                            <input id="foto" type="file">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <!-- START_CUSTOM_CODE_editableListForm2 -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <!-- END_CUSTOM_CODE_editableListForm2 -->
+    </div>
+</div>

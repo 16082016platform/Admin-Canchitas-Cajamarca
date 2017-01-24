@@ -5,6 +5,77 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home View"
+    "title": "Login",
+    "homeModel": {
+      "logoutLabel": "Salir",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "signinLabel": "Sign In",
+      "gotoRegisterLabel": "Register",
+      "remembermeLabel": "Remember Me",
+      "registerEmailLabel": "Email",
+      "registerPasswordLabel": "Password",
+      "registerNameLabel": "Name",
+      "registerLabel": "Register",
+      "gotoSigninLabel": "Sign In"
+    }
+  },
+  "canchas": {
+    "title": "Mi cancha",
+    "canchasModel": {
+      "detailHeaderFieldValue": "Detail",
+      "editScreenHeaderValue": "Editar datos",
+      "editableListForm2": {
+        "nombre": {
+          "title": "Nombre",
+          "placeholder": "Nombre que aparecerá"
+        },
+        "contacto": {
+          "title": "Contacto",
+          "placeholder": "Persona encargada de las reservas"
+        },
+        "celular": {
+          "title": "Celular",
+          "placeholder": "Celular de referencia"
+        },
+        "telefono": {
+          "title": "Teléfono",
+          "placeholder": "Telefóno de referencia"
+        },
+        "foto": {
+          "title": "Foto",
+          "fileUploadPlaceholder": "Tomar nueva foto"
+        }
+      },
+      "editableListForm4": {}
+    }
+  },
+  "horarios": {
+    "title": "Mi horario",
+    "horariosModel": {
+      "detailHeaderFieldValue": "Detalle",
+      "addScreenHeaderValue": "Create",
+      "editScreenHeaderValue": "Editar",
+      "editableListForm7": {
+        "lunes": {
+          "title": "Lunes"
+        },
+        "martes": {
+          "title": "Martes"
+        }
+      },
+      "editableListForm13": {}
+    }
+  },
+  "aboutView": {
+    "title": "About",
+    "aboutViewModel": {
+      "appName": "Canchitas Cajamarca",
+      "appVersion": "Version 1",
+      "appDescription": "App description",
+      "contactLabel": "Contact us",
+      "facebookLabel": "Like us on Facebook",
+      "twitterLabel": "Follow us on Twitter"
+    }
   }
 }

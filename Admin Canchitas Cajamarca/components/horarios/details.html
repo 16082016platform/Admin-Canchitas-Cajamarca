@@ -1,0 +1,40 @@
+<div data-role="view" data-title="Details" data-model="app.horarios.horariosModel" data-bind="events: { show: detailsShow }"
+    id="horariosModelScreen" class="screen screen--detail">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"> <a data-role="backbutton" data-align="left">Back</a> 
+        <span data-bind="text: strings.horarios.horariosModel.detailHeaderFieldValue"></span>            
+        <!--a data-role="button" data-align="right" data-bind="events: { click: editClick }">Edit</a--> 
+        </div>
+    </header>
+    <div class="details-content screen__content screen__content--details">
+        <div class="km-listview-wrapper">
+            <ul class="km-listview km-list km-listinset details-fields">
+                <table id="tablaHorario">
+                    <tbody>
+                        <tr class="tableCabecera">
+                            <td onclick="editarDia('Lunes');">Lun</td>
+                            <td onclick="editarDia('Martes');">Mar</td>
+                            <td onclick="editarDia('Miercoles');">Mie</td>
+                            <td onclick="editarDia('Jueves');">Jue</td>
+                            <td onclick="editarDia('Viernes');">Vie</td>
+                            <td onclick="editarDia('Sabado');">Sab</td>
+                            <td onclick="editarDia('Domingo');">Dom</td>
+                        </tr>
+                        <tr>
+                            <td data-bind="html: currentItem.Lun" onclick="editarDia('Lunes');"></td>
+                            <td data-bind="html: currentItem.Mar" onclick="editarDia('Martes');"></td>
+                            <td data-bind="html: currentItem.Mie" onclick="editarDia('Miercoles');"></td>
+                            <td data-bind="html: currentItem.Jue" onclick="editarDia('Jueves');"></td>
+                            <td data-bind="html: currentItem.Vie" onclick="editarDia('Viernes');"></td>
+                            <td data-bind="html: currentItem.Sab" onclick="editarDia('Sabado');"></td>
+                            <td data-bind="html: currentItem.Dom" onclick="editarDia('Domingo');"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_horariosModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <!-- END_CUSTOM_CODE_horariosModel -->
+</div>

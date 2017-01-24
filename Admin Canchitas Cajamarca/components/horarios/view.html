@@ -1,0 +1,33 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.horarios" data-show="app.horarios.onShow" data-after-show="app.horarios.afterShow" id="horariosScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.horarios.title"></span>
+
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+
+            <a data-role="button" data-align="right" data-bind="events: { click: horariosModel.addClick }">Add</a></div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_horarios -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_horarios -->
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="horariosModelTemplate" data-bind="source: horariosModel.dataSource, events: {click: horariosModel.itemClick}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_horariosModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_horariosModel -->
+    <script type="text/x-kendo-template" id="horariosModelTemplate">
+        <div class="image-with-text">
+            # data = app.horarios.horariosModel.fixHierarchicalData(data); #
+
+            <h3>#: data['Lunes'] #</h3>
+            <p>#: data['Martes'] #</p>
+        </div>
+    </script>
+</div>
